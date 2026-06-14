@@ -173,6 +173,10 @@ interface TraceEvent {
 | `vercel`, `railway` | `deployment` |
 | `memory`, `omega-memory` | `memory_retrieval` |
 
+## Dashboard 截图
+
+![Dashboard](screenshots/%E6%88%AA%E5%B1%8F2026-06-14%2021.54.21.png)
+
 ## Dashboard 功能
 
 - ✅ **Trace Timeline**: 瀑布图展示所有 trace 的时间线
