@@ -1,0 +1,22 @@
+{
+  "name": "mcp-observability",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Claude Code MCP Observability System — trace, monitor, and visualize MCP activity",
+  "workspaces": [
+    "packages/proxy",
+    "packages/server",
+    "packages/dashboard"
+  ],
+  "scripts": {
+    "dev:server": "npm run dev -w packages/server",
+    "dev:dashboard": "npm run dev -w packages/dashboard",
+    "dev:proxy": "npm run dev -w packages/proxy",
+    "build": "npm run build -w packages/server && npm run build -w packages/proxy && npm run build -w packages/dashboard",
+    "start": "concurrently \"npm run dev:server\" \"npm run dev:dashboard\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "typescript": "^5.7.0"
+  }
+}
